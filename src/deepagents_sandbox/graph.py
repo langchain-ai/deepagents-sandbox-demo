@@ -10,7 +10,7 @@ from langgraph.graph import END, START, StateGraph
 from langgraph.graph.message import MessagesState
 from langsmith.sandbox import SandboxClient
 
-from .langsmith_backend import LangSmithBackend
+from deepagents_sandbox.langsmith_backend import LangSmithBackend
 
 TEMPLATE_NAME = "python-sandbox"
 TEMPLATE_IMAGE = "ubuntu:24.04"
