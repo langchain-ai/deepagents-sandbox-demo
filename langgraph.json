@@ -1,0 +1,11 @@
+{
+  "$schema": "https://langchain-ai.github.io/langgraph/schemas/langgraph.json",
+  "dependencies": [
+    "."
+  ],
+  "graphs": {
+    "sandbox_agent": "./main.py:graph"
+  },
+  "env": ".env",
+  "image_distro": "wolfi"
+}
