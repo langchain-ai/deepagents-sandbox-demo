@@ -1,17 +1,14 @@
 [project]
 name = "deepagents-sandbox-demo"
 version = "0.1.0"
-description = "Add your description here"
+description = "Deep agent with LangSmith sandbox for filesystem access"
 readme = "README.md"
-requires-python = ">=3.13"
+requires-python = ">=3.11"
 dependencies = [
     "deepagents>=0.3.8",
-    "langsmith",
+    "langsmith @ git+https://github.com/langchain-ai/langsmith-sdk@main#subdirectory=python",
     "langgraph>=0.2.0",
     "langgraph-checkpoint>=2.0.0",
     "langgraph-cli[inmem]>=0.4.12",
     "langchain-anthropic>=1.3.1",
 ]
-
-[tool.uv.sources]
-langsmith = { git = "https://github.com/langchain-ai/langsmith-sdk", subdirectory = "python" }
